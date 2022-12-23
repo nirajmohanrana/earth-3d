@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const TopSectionContainer = styled.div`
@@ -49,6 +50,7 @@ const Play = styled.button`
   font-size: 14px;
   font-weight: 700;
   border-radius: 8px;
+  text-decoration: none;
   padding: 8px 2em;
   margin-top: 3em;
   cursor: pointer;
@@ -81,7 +83,9 @@ export function TopSection() {
         planet in our solar system, and it's the only one known for sure to have
         liquid water on its surface.
       </Paragraph>
-      <Play>Play With It</Play>
+      <Play>
+        <Link to="/play">Play With It</Link>
+      </Play>
       <Author>~By Niraj</Author>
     </TopSectionContainer>
   );

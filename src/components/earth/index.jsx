@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
-import { Stars } from "@react-three/drei";
+import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 import EarthCloudsMap from "../../assets/textures/8k_earth_clouds.jpg";
@@ -51,7 +51,14 @@ export function Earth(props) {
           metalness={0.4}
           roughness={0.7}
         />
-        {/* <OrbitControls enableRotate={true} rotateSpeed={0.4} /> */}
+        <OrbitControls
+          enableZoom={true}
+          enablePan={true}
+          enableRotate={true}
+          zoomSpeed={0.6}
+          panSpeed={0.5}
+          rotateSpeed={0.4}
+        />
       </mesh>
     </>
   );
