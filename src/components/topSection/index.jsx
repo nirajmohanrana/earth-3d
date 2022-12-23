@@ -7,7 +7,7 @@ const TopSectionContainer = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00226d2e;
+  background-color: #001f612d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@ const TopSectionContainer = styled.div`
 
 const Logo = styled.h1`
   margin: 0;
-  margin-top: 12%;
+  margin-top: 15%;
   color: #8ad0ff;
   font-weight: 700;
   font-size: 70px;
@@ -24,7 +24,7 @@ const Logo = styled.h1`
 
 const Slogan = styled.h4`
   margin: 0;
-  color: #fff;
+  color: #e7e7e7;
   font-weight: 500;
   font-size: 30px;
   margin-top: 10px;
@@ -32,7 +32,7 @@ const Slogan = styled.h4`
 
 const Paragraph = styled.h4`
   margin: 0;
-  color: #fff;
+  color: #cacaca;
   font-weight: 400;
   font-size: 14px;
   margin-top: 1em;

@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 import EarthCloudsMap from "../../assets/textures/8k_earth_clouds.jpg";
 import EarthDayMap from "../../assets/textures/8k_earth_daymap.jpg";
-import EarthNightMap from "../../assets/textures/8k_earth_nightmap.jpg";
+// import EarthNightMap from "../../assets/textures/8k_earth_nightmap.jpg";
 import EarthNormalMap from "../../assets/textures/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../../assets/textures/8k_earth_specular_map.jpg";
 import { TextureLoader } from "three";
@@ -29,15 +29,8 @@ export function Earth(props) {
   return (
     <>
       {/* <ambientLight intensity={0.01} /> */}
-      <pointLight color="#ffeaaa" position={[2, 0, 5]} intensity={1.4} />
-      <Stars
-        radius={300}
-        depth={60}
-        count={20000}
-        factor={7}
-        saturation={0}
-        faded={true}
-      />
+      <pointLight color="#ffeaaa" position={[3, 0, 5]} intensity={5} />
+      <Stars radius={300} depth={60} count={20000} factor={4} faded={true} />
       <mesh ref={cloudsRef} position={[0, 0, 3]}>
         <sphereGeometry args={[1.005, 32, 32]} />
         <meshPhongMaterial
