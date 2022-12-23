@@ -7,17 +7,17 @@ const TopSectionContainer = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #1756dd30;
+  background-color: #00226d2e;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%;
   z-index: 99;
 `;
 
 const Logo = styled.h1`
   margin: 0;
-  color: #fff;
+  margin-top: 12%;
+  color: #8ad0ff;
   font-weight: 700;
   font-size: 70px;
 `;
@@ -34,9 +34,32 @@ const Paragraph = styled.h4`
   margin: 0;
   color: #fff;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 14px;
   margin-top: 1em;
   line-height: 1.5;
+  max-width: 40%;
+  text-align: center;
+`;
+
+const Play = styled.button`
+  outline: none;
+  border: none;
+  background-color: #8ad0ff;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 8px 2em;
+  margin-top: 3em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 400ms ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #8ad0ff;
+    color: #fff;
+  }
 `;
 
 export function TopSection() {
@@ -44,6 +67,14 @@ export function TopSection() {
     <TopSectionContainer>
       <Logo>THE EARTH</Logo>
       <Slogan>Our Little Big Planet</Slogan>
+      <Paragraph>
+        Earth, our home planet, is a world unlike any other. The third planet
+        from the sun, Earth is the only place in the known universe confirmed to
+        host life. With a radius of 3,959 miles, Earth is the fifth largest
+        planet in our solar system, and it's the only one known for sure to have
+        liquid water on its surface.
+      </Paragraph>
+      <Play>Play With It</Play>
     </TopSectionContainer>
   );
 }
