@@ -34,7 +34,7 @@ const Paragraph = styled.h4`
   margin: 0;
   color: #cacaca;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 1em;
   line-height: 1.5;
   max-width: 40%;
@@ -46,7 +46,7 @@ const Play = styled.button`
   border: none;
   background-color: #8ad0ff;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   border-radius: 8px;
   padding: 8px 2em;
@@ -62,6 +62,13 @@ const Play = styled.button`
   }
 `;
 
+const Author = styled.p`
+  color: #cacaca;
+  font-weight: 800;
+  font-size: 12px;
+  margin-top: 1em;
+`;
+
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -75,6 +82,7 @@ export function TopSection() {
         liquid water on its surface.
       </Paragraph>
       <Play>Play With It</Play>
+      <Author>~By Niraj</Author>
     </TopSectionContainer>
   );
 }
