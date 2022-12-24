@@ -209,12 +209,12 @@ export function TopSection() {
           <Link to="/car">
             <Car />
           </Link>
-          <Link to="/car">
+          <Link to="/shoe">
             <Shoe />
           </Link>
-          <Link to="/car">
+          <a href="https://portal-three-d.netlify.app/">
             <Portal />
-          </Link>
+          </a>
         </OtherSectionButtonsContainer>
       </OtherSectionContainer>
       <Author>~By Niraj</Author>

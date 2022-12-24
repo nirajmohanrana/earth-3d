@@ -12,6 +12,7 @@ export default function App() {
         <Route path="play" element={<Play />} />
         <Route path="chair" element={<Chair />} />
         <Route path="car" element={<Car />} />
+        <Route path="shoe" element={<Shoe />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>
@@ -44,6 +45,17 @@ function Car() {
   return (
     <div>
       <h2>Car!🚗 Work in Progress👷‍♂️</h2>
+      <p>
+        <Link to="/">Go to the home page</Link>
+      </p>
+    </div>
+  );
+}
+
+function Shoe() {
+  return (
+    <div>
+      <h2>Shoe!👞 Work in Progress👷‍♂️</h2>
       <p>
         <Link to="/">Go to the home page</Link>
       </p>
