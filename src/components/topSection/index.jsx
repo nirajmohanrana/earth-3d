@@ -83,9 +83,9 @@ export function TopSection() {
         planet in our solar system, and it's the only one known for sure to have
         liquid water on its surface.
       </Paragraph>
-      <Play>
-        <Link to="/play">Play With It</Link>
-      </Play>
+      <Link to="/play">
+        <Play>Play With It</Play>
+      </Link>
       <Author>~By Niraj</Author>
     </TopSectionContainer>
   );

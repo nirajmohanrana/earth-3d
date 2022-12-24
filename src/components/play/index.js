@@ -1,9 +1,9 @@
-import "../../App.css";
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "../earth";
 import { Link } from "react-router-dom";
+import { Loader } from "@react-three/drei";
 
 const CanvasContainer = styled.div`
   width: 100%;
@@ -26,11 +26,12 @@ function Play() {
       >
         ← Go Back
       </Link>
-      <Canvas>
+      <Canvas style={{ backgroundColor: "black" }}>
         <Suspense fallback={null}>
           <Earth />
         </Suspense>
       </Canvas>
+      <Loader />
     </CanvasContainer>
   );
 }
