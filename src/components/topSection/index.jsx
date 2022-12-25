@@ -209,9 +209,9 @@ export function TopSection() {
           <Link to="/car">
             <Car />
           </Link>
-          <Link to="/shoe">
+          <a href="https://shoe-three-d.netlify.app/">
             <Shoe />
-          </Link>
+          </a>
           <a href="https://portal-three-d.netlify.app/">
             <Portal />
           </a>
